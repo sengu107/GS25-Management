@@ -11,11 +11,11 @@ namespace GS25Management.DTO
         public int MaNhanVien { get; set; }
         public string TenNhanVien { get; set; }  
         public string SoDienThoaiKhachHang { get; set; }  
-        public decimal TongTien { get; set; }       // tổng tiền SAU khuyến mãi sản phẩm, TRƯỚC mã giảm giá
-        public string MaGiamGia { get; set; }       // mã coupon khách nhập, null nếu không dùng
-        public decimal TienGiam { get; set; }       // số tiền giảm từ MaGiamGia
-        public decimal ThanhTien { get; set; }      // = TongTien - TienGiam
-        public string TrangThai { get; set; }      // "Chưa thanh toán / Đã thanh toán / Đã hủy"
+        public decimal TongTien { get; set; }       
+        public string MaGiamGia { get; set; }     
+        public decimal TienGiam { get; set; }  
+        public decimal ThanhTien { get; set; }     
+        public string TrangThai { get; set; }    
         public string GhiChu { get; set; }
 
         public HoaDonBanHangDTO() { }
