@@ -28,3 +28,4 @@ namespace GS25Management.DTO
         }
     }
 }
+

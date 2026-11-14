@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LastTermC_.BUS
+namespace GS25Management.BUS
 {
-    internal class HoaDonBanHangBUS
-    {
-    }
+    
 }
