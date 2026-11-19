@@ -24,5 +24,10 @@ namespace LastTermC_.GUI
         {
 
         }
+
+        private void lblSoHoaDon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
