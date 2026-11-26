@@ -36,6 +36,7 @@ namespace LastTermC_.GUI
             {
                 mnuTaiKhoan,
                 sepHeThong,
+                new ToolStripMenuItem("Đổi Mật Khẩu", null, (s, e) => { using (frmDoiMatKhau f = new frmDoiMatKhau()) f.ShowDialog(this); }),
                 new ToolStripMenuItem("Đăng Xuất", null, mnuDangXuat_Click),
                 new ToolStripMenuItem("Thoát", null, (s, e) => Close())
             });
@@ -87,7 +88,7 @@ namespace LastTermC_.GUI
 
         private void mnuTaiKhoan_Click(object? sender, EventArgs e)
         {
-            MessageBox.Show("Chức năng Quản lý tài khoản sẽ có ở Mục 2.", "Thông báo");
+            MoForm<frmTaiKhoan>();
         }
 
         private void mnuNhanVien_Click(object? sender, EventArgs e)

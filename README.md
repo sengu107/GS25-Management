@@ -62,10 +62,14 @@ Báo cáo kết thúc môn **Lập trình .NET** — ứng dụng desktop C# Win
 | Lớp | File | Nội dung |
 |---|---|---|
 | DTO | `DTO/TaiKhoanDTO.cs` | Dữ liệu tài khoản (mã, tên đăng nhập, mật khẩu băm, vai trò, trạng thái) |
-| DAL | `DAL/TaiKhoanDAL.cs` | Lấy tài khoản theo tên đăng nhập (kèm họ tên nhân viên) |
-| BUS | `BUS/TaiKhoanBUS.cs` | Băm mật khẩu SHA-256, đăng nhập / đăng xuất, lưu tài khoản đang đăng nhập |
+| DAL | `DAL/TaiKhoanDAL.cs` | Lấy tài khoản theo tên đăng nhập; tra cứu, thêm, sửa, xóa tài khoản; đổi mật khẩu |
+| DAL | `DAL/NhanVienDAL.cs` | Tra cứu nhân viên |
+| BUS | `BUS/TaiKhoanBUS.cs` | Băm mật khẩu SHA-256, đăng nhập / đăng xuất; kiểm tra dữ liệu tài khoản; chặn tự khóa / tự xóa / tự hạ quyền; đổi mật khẩu |
+| BUS | `BUS/NhanVienBUS.cs` | Tra cứu nhân viên |
 | GUI | `GUI/frmLogin.cs`, `frmLogin.Designer.cs`, `frmLogin.resx` | Form đăng nhập (`ErrorProvider`), điểm khởi động ứng dụng |
-| GUI | `GUI/frmMain.HeThong.cs` | Gắn menu Hệ Thống, Nhân Sự, thanh trạng thái và phân quyền vào `frmMain` |
+| GUI | `GUI/frmTaiKhoan.cs`, `frmTaiKhoan.Designer.cs`, `frmTaiKhoan.resx` | Quản lý tài khoản: thêm / sửa / xóa, tìm kiếm, gán vai trò và nhân viên, khóa / mở khóa, đặt lại mật khẩu (`DataGridView`, `BindingSource`, `ErrorProvider`) |
+| GUI | `GUI/frmDoiMatKhau.cs`, `frmDoiMatKhau.Designer.cs`, `frmDoiMatKhau.resx` | Đổi mật khẩu của tài khoản đang đăng nhập |
+| GUI | `GUI/frmMain.HeThong.cs` | Gắn menu Hệ Thống (Quản lý tài khoản, Đổi mật khẩu, Đăng xuất, Thoát), Nhân Sự, thanh trạng thái và phân quyền vào `frmMain` |
 | CSDL | `Database/ScriptDB_HeThong_NhanSu.sql` (ở thư mục gốc) | Bảng `NhanVien`, `TaiKhoan` và dữ liệu mẫu |
 | Chung | `Program.cs` | Gọi `frmLogin.ChayUngDung()` để khởi động ứng dụng |
 | Chung | `README.md` (ở thư mục gốc) | Tài liệu dự án |
