@@ -93,7 +93,7 @@ namespace LastTermC_.GUI
 
         private void mnuNhanVien_Click(object? sender, EventArgs e)
         {
-            MessageBox.Show("Chức năng Quản lý nhân viên sẽ có ở Mục 3.", "Thông báo");
+            MoForm<frmNhanVien>();
         }
 
         private void mnuDangXuat_Click(object? sender, EventArgs e)
