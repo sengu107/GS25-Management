@@ -60,46 +60,46 @@
             btnThanhToan = new Button();
             dtvSanPhamtrongKhoHang = new DataGridView();
             tpHoaDon = new TabPage();
-            groupBox2 = new GroupBox();
-            btnXoaHoaDonHoanSP = new Button();
-            btnInHoaDon = new Button();
-            baoloi = new ErrorProvider(components);
+            dgvDanhsachhoadon = new DataGridView();
+            rtbChitiethoadon = new RichTextBox();
+            label4 = new Label();
+            label3 = new Label();
             gbtracuuhoadon = new GroupBox();
+            cbtracuutheo = new ComboBox();
+            label2 = new Label();
             label1 = new Label();
             txttracuuMahoadon = new TextBox();
             btnTraCuuHoaDon = new Button();
-            label2 = new Label();
-            cbtracuutheo = new ComboBox();
+            groupBox2 = new GroupBox();
             btnchitiethoadon = new Button();
-            label3 = new Label();
-            label4 = new Label();
-            rtbChitiethoadon = new RichTextBox();
-            dgvDanhsachhoadon = new DataGridView();
+            btnXoaHoaDonHoanSP = new Button();
+            btnInHoaDon = new Button();
             tpThongkebaocao = new TabPage();
+            groupBox4 = new GroupBox();
+            btnXUATCSV = new Button();
+            btnXuatEXCEL = new Button();
+            label8 = new Label();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            label7 = new Label();
+            dgvTopSanPham = new DataGridView();
+            dgvDoanhThu = new DataGridView();
             groupBox3 = new GroupBox();
-            label5 = new Label();
-            dtpTuNgay = new DateTimePicker();
-            label6 = new Label();
-            dtpDenNgay = new DateTimePicker();
-            btnThongKe = new Button();
-            lblsotongdoanhthu = new Label();
-            lbltongdoanhthu = new Label();
-            lblSoHoaDon = new Label();
-            lblSoHoaDonDaBan = new Label();
-            lblSoSanPhamDaBan = new Label();
-            lblsospdaban = new Label();
             lblGiaTriTrungBinh = new Label();
             lblgiatritbtrenhoadon = new Label();
-            dgvDoanhThu = new DataGridView();
-            dgvTopSanPham = new DataGridView();
-            label7 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            label8 = new Label();
-            groupBox4 = new GroupBox();
-            btnXuatEXCEL = new Button();
-            btnXUATCSV = new Button();
+            lblSoSanPhamDaBan = new Label();
+            lblsospdaban = new Label();
+            lblSoHoaDon = new Label();
+            lblSoHoaDonDaBan = new Label();
+            lbltongdoanhthu = new Label();
+            lblsotongdoanhthu = new Label();
+            btnThongKe = new Button();
+            dtpDenNgay = new DateTimePicker();
+            label6 = new Label();
+            dtpTuNgay = new DateTimePicker();
+            label5 = new Label();
+            baoloi = new ErrorProvider(components);
             tabControl1.SuspendLayout();
             tpBanHang.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -107,15 +107,15 @@
             grbThanhToan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtvSanPhamtrongKhoHang).BeginInit();
             tpHoaDon.SuspendLayout();
-            groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)baoloi).BeginInit();
-            gbtracuuhoadon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvDanhsachhoadon).BeginInit();
+            gbtracuuhoadon.SuspendLayout();
+            groupBox2.SuspendLayout();
             tpThongkebaocao.SuspendLayout();
-            groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvDoanhThu).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvTopSanPham).BeginInit();
             groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTopSanPham).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvDoanhThu).BeginInit();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)baoloi).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -451,41 +451,40 @@
             tpHoaDon.Text = "HOÁ ĐƠN";
             tpHoaDon.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // dgvDanhsachhoadon
             // 
-            groupBox2.Controls.Add(btnchitiethoadon);
-            groupBox2.Controls.Add(btnXoaHoaDonHoanSP);
-            groupBox2.Controls.Add(btnInHoaDon);
-            groupBox2.Location = new Point(20, 16);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(291, 181);
-            groupBox2.TabIndex = 0;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Quản lý hoá đơn";
+            dgvDanhsachhoadon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDanhsachhoadon.Location = new Point(343, 43);
+            dgvDanhsachhoadon.Name = "dgvDanhsachhoadon";
+            dgvDanhsachhoadon.RowHeadersWidth = 51;
+            dgvDanhsachhoadon.Size = new Size(606, 855);
+            dgvDanhsachhoadon.TabIndex = 7;
             // 
-            // btnXoaHoaDonHoanSP
+            // rtbChitiethoadon
             // 
-            btnXoaHoaDonHoanSP.BackColor = Color.Gold;
-            btnXoaHoaDonHoanSP.Location = new Point(24, 77);
-            btnXoaHoaDonHoanSP.Name = "btnXoaHoaDonHoanSP";
-            btnXoaHoaDonHoanSP.Size = new Size(250, 29);
-            btnXoaHoaDonHoanSP.TabIndex = 1;
-            btnXoaHoaDonHoanSP.Text = "Xoá Hoá Đơn - Hoàn Sản Phẩm";
-            btnXoaHoaDonHoanSP.UseVisualStyleBackColor = false;
+            rtbChitiethoadon.Location = new Point(955, 44);
+            rtbChitiethoadon.Name = "rtbChitiethoadon";
+            rtbChitiethoadon.Size = new Size(555, 855);
+            rtbChitiethoadon.TabIndex = 6;
+            rtbChitiethoadon.Text = "";
             // 
-            // btnInHoaDon
+            // label4
             // 
-            btnInHoaDon.BackColor = Color.Gold;
-            btnInHoaDon.Location = new Point(24, 40);
-            btnInHoaDon.Name = "btnInHoaDon";
-            btnInHoaDon.Size = new Size(250, 29);
-            btnInHoaDon.TabIndex = 0;
-            btnInHoaDon.Text = "In Hoá Đơn";
-            btnInHoaDon.UseVisualStyleBackColor = false;
+            label4.AutoSize = true;
+            label4.Location = new Point(1155, 12);
+            label4.Name = "label4";
+            label4.Size = new Size(123, 20);
+            label4.TabIndex = 5;
+            label4.Text = "Chi Tiết Hoá Đơn";
             // 
-            // baoloi
+            // label3
             // 
-            baoloi.ContainerControl = this;
+            label3.AutoSize = true;
+            label3.Location = new Point(560, 12);
+            label3.Name = "label3";
+            label3.Size = new Size(143, 20);
+            label3.TabIndex = 4;
+            label3.Text = "Danh Sách Hoá Đơn";
             // 
             // gbtracuuhoadon
             // 
@@ -500,6 +499,23 @@
             gbtracuuhoadon.TabIndex = 2;
             gbtracuuhoadon.TabStop = false;
             gbtracuuhoadon.Text = "Tra Cứu Hoá Đơn";
+            // 
+            // cbtracuutheo
+            // 
+            cbtracuutheo.FormattingEnabled = true;
+            cbtracuutheo.Location = new Point(115, 64);
+            cbtracuutheo.Name = "cbtracuutheo";
+            cbtracuutheo.Size = new Size(158, 28);
+            cbtracuutheo.TabIndex = 9;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(17, 68);
+            label2.Name = "label2";
+            label2.Size = new Size(99, 20);
+            label2.TabIndex = 8;
+            label2.Text = "Tra Cứu Theo:";
             // 
             // label1
             // 
@@ -526,22 +542,17 @@
             btnTraCuuHoaDon.Text = "Tra Cứu Hoá Đơn";
             btnTraCuuHoaDon.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // groupBox2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(17, 68);
-            label2.Name = "label2";
-            label2.Size = new Size(99, 20);
-            label2.TabIndex = 8;
-            label2.Text = "Tra Cứu Theo:";
-            // 
-            // cbtracuutheo
-            // 
-            cbtracuutheo.FormattingEnabled = true;
-            cbtracuutheo.Location = new Point(115, 64);
-            cbtracuutheo.Name = "cbtracuutheo";
-            cbtracuutheo.Size = new Size(158, 28);
-            cbtracuutheo.TabIndex = 9;
+            groupBox2.Controls.Add(btnchitiethoadon);
+            groupBox2.Controls.Add(btnXoaHoaDonHoanSP);
+            groupBox2.Controls.Add(btnInHoaDon);
+            groupBox2.Location = new Point(20, 16);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(291, 202);
+            groupBox2.TabIndex = 0;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Quản lý hoá đơn";
             // 
             // btnchitiethoadon
             // 
@@ -553,40 +564,25 @@
             btnchitiethoadon.Text = "Xem chi tiết hoá đơn";
             btnchitiethoadon.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // btnXoaHoaDonHoanSP
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(560, 12);
-            label3.Name = "label3";
-            label3.Size = new Size(143, 20);
-            label3.TabIndex = 4;
-            label3.Text = "Danh Sách Hoá Đơn";
+            btnXoaHoaDonHoanSP.BackColor = Color.Gold;
+            btnXoaHoaDonHoanSP.Location = new Point(24, 77);
+            btnXoaHoaDonHoanSP.Name = "btnXoaHoaDonHoanSP";
+            btnXoaHoaDonHoanSP.Size = new Size(250, 29);
+            btnXoaHoaDonHoanSP.TabIndex = 1;
+            btnXoaHoaDonHoanSP.Text = "Xoá Hoá Đơn - Hoàn Sản Phẩm";
+            btnXoaHoaDonHoanSP.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // btnInHoaDon
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(1155, 12);
-            label4.Name = "label4";
-            label4.Size = new Size(123, 20);
-            label4.TabIndex = 5;
-            label4.Text = "Chi Tiết Hoá Đơn";
-            // 
-            // rtbChitiethoadon
-            // 
-            rtbChitiethoadon.Location = new Point(955, 44);
-            rtbChitiethoadon.Name = "rtbChitiethoadon";
-            rtbChitiethoadon.Size = new Size(555, 855);
-            rtbChitiethoadon.TabIndex = 6;
-            rtbChitiethoadon.Text = "";
-            // 
-            // dgvDanhsachhoadon
-            // 
-            dgvDanhsachhoadon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDanhsachhoadon.Location = new Point(343, 43);
-            dgvDanhsachhoadon.Name = "dgvDanhsachhoadon";
-            dgvDanhsachhoadon.RowHeadersWidth = 51;
-            dgvDanhsachhoadon.Size = new Size(606, 855);
-            dgvDanhsachhoadon.TabIndex = 7;
+            btnInHoaDon.BackColor = Color.Gold;
+            btnInHoaDon.Location = new Point(24, 40);
+            btnInHoaDon.Name = "btnInHoaDon";
+            btnInHoaDon.Size = new Size(250, 29);
+            btnInHoaDon.TabIndex = 0;
+            btnInHoaDon.Text = "In Hoá Đơn";
+            btnInHoaDon.UseVisualStyleBackColor = false;
             // 
             // tpThongkebaocao
             // 
@@ -605,6 +601,102 @@
             tpThongkebaocao.TabIndex = 2;
             tpThongkebaocao.Text = "THỐNG KÊ - BÁO CÁO";
             tpThongkebaocao.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(btnXUATCSV);
+            groupBox4.Controls.Add(btnXuatEXCEL);
+            groupBox4.Location = new Point(1201, 298);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(250, 125);
+            groupBox4.TabIndex = 17;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Báo Cáo";
+            // 
+            // btnXUATCSV
+            // 
+            btnXUATCSV.Location = new Point(48, 70);
+            btnXUATCSV.Name = "btnXUATCSV";
+            btnXUATCSV.Size = new Size(150, 29);
+            btnXUATCSV.TabIndex = 1;
+            btnXUATCSV.Text = "Xuất Báo Cáo CSV";
+            btnXUATCSV.UseVisualStyleBackColor = true;
+            // 
+            // btnXuatEXCEL
+            // 
+            btnXuatEXCEL.Location = new Point(48, 35);
+            btnXuatEXCEL.Name = "btnXuatEXCEL";
+            btnXuatEXCEL.Size = new Size(150, 29);
+            btnXuatEXCEL.TabIndex = 0;
+            btnXuatEXCEL.Text = "Xuất Báo Cáo Excel";
+            btnXuatEXCEL.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F);
+            label8.Location = new Point(749, 258);
+            label8.Name = "label8";
+            label8.Size = new Size(220, 28);
+            label8.TabIndex = 16;
+            label8.Text = "Top Sản Phẩm Bán Chạy";
+            // 
+            // button3
+            // 
+            button3.Location = new Point(361, 261);
+            button3.Name = "button3";
+            button3.Size = new Size(78, 29);
+            button3.TabIndex = 15;
+            button3.Text = "Năm";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(277, 261);
+            button2.Name = "button2";
+            button2.Size = new Size(78, 29);
+            button2.TabIndex = 14;
+            button2.Text = "Tháng ";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(193, 261);
+            button1.Name = "button1";
+            button1.Size = new Size(78, 29);
+            button1.TabIndex = 13;
+            button1.Text = "Ngày";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F);
+            label7.Location = new Point(20, 259);
+            label7.Name = "label7";
+            label7.Size = new Size(158, 28);
+            label7.TabIndex = 3;
+            label7.Text = "Doanh thu theo :";
+            // 
+            // dgvTopSanPham
+            // 
+            dgvTopSanPham.BackgroundColor = SystemColors.ButtonHighlight;
+            dgvTopSanPham.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTopSanPham.Location = new Point(601, 298);
+            dgvTopSanPham.Name = "dgvTopSanPham";
+            dgvTopSanPham.RowHeadersWidth = 51;
+            dgvTopSanPham.Size = new Size(510, 549);
+            dgvTopSanPham.TabIndex = 2;
+            // 
+            // dgvDoanhThu
+            // 
+            dgvDoanhThu.BackgroundColor = SystemColors.ButtonHighlight;
+            dgvDoanhThu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDoanhThu.Location = new Point(20, 298);
+            dgvDoanhThu.Name = "dgvDoanhThu";
+            dgvDoanhThu.RowHeadersWidth = 51;
+            dgvDoanhThu.Size = new Size(510, 549);
+            dgvDoanhThu.TabIndex = 1;
             // 
             // groupBox3
             // 
@@ -628,67 +720,47 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Thống Kê - Báo Cáo";
             // 
-            // label5
+            // lblGiaTriTrungBinh
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(596, 36);
-            label5.Name = "label5";
-            label5.Size = new Size(72, 20);
-            label5.TabIndex = 0;
-            label5.Text = "Từ Ngày :";
+            lblGiaTriTrungBinh.AutoSize = true;
+            lblGiaTriTrungBinh.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblGiaTriTrungBinh.Location = new Point(1085, 103);
+            lblGiaTriTrungBinh.Name = "lblGiaTriTrungBinh";
+            lblGiaTriTrungBinh.Size = new Size(355, 35);
+            lblGiaTriTrungBinh.TabIndex = 12;
+            lblGiaTriTrungBinh.Text = "Giá trị trung bình / hoá đơn :";
             // 
-            // dtpTuNgay
+            // lblgiatritbtrenhoadon
             // 
-            dtpTuNgay.Location = new Point(674, 33);
-            dtpTuNgay.Name = "dtpTuNgay";
-            dtpTuNgay.Size = new Size(250, 27);
-            dtpTuNgay.TabIndex = 1;
+            lblgiatritbtrenhoadon.AutoSize = true;
+            lblgiatritbtrenhoadon.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblgiatritbtrenhoadon.ForeColor = Color.Tomato;
+            lblgiatritbtrenhoadon.Location = new Point(1085, 138);
+            lblgiatritbtrenhoadon.Name = "lblgiatritbtrenhoadon";
+            lblgiatritbtrenhoadon.Size = new Size(40, 46);
+            lblgiatritbtrenhoadon.TabIndex = 11;
+            lblgiatritbtrenhoadon.Text = "0";
             // 
-            // label6
+            // lblSoSanPhamDaBan
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(930, 36);
-            label6.Name = "label6";
-            label6.Size = new Size(82, 20);
-            label6.TabIndex = 2;
-            label6.Text = "Đến Ngày :";
+            lblSoSanPhamDaBan.AutoSize = true;
+            lblSoSanPhamDaBan.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSoSanPhamDaBan.Location = new Point(750, 103);
+            lblSoSanPhamDaBan.Name = "lblSoSanPhamDaBan";
+            lblSoSanPhamDaBan.Size = new Size(269, 35);
+            lblSoSanPhamDaBan.TabIndex = 10;
+            lblSoSanPhamDaBan.Text = "Số Sản Phẩm Đã Bán :";
             // 
-            // dtpDenNgay
+            // lblsospdaban
             // 
-            dtpDenNgay.Location = new Point(1018, 33);
-            dtpDenNgay.Name = "dtpDenNgay";
-            dtpDenNgay.Size = new Size(250, 27);
-            dtpDenNgay.TabIndex = 3;
-            // 
-            // btnThongKe
-            // 
-            btnThongKe.Location = new Point(1293, 30);
-            btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(138, 29);
-            btnThongKe.TabIndex = 4;
-            btnThongKe.Text = "Thống Kê";
-            btnThongKe.UseVisualStyleBackColor = true;
-            // 
-            // lblsotongdoanhthu
-            // 
-            lblsotongdoanhthu.AutoSize = true;
-            lblsotongdoanhthu.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblsotongdoanhthu.ForeColor = Color.Tomato;
-            lblsotongdoanhthu.Location = new Point(27, 138);
-            lblsotongdoanhthu.Name = "lblsotongdoanhthu";
-            lblsotongdoanhthu.Size = new Size(40, 46);
-            lblsotongdoanhthu.TabIndex = 5;
-            lblsotongdoanhthu.Text = "0";
-            // 
-            // lbltongdoanhthu
-            // 
-            lbltongdoanhthu.AutoSize = true;
-            lbltongdoanhthu.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbltongdoanhthu.Location = new Point(27, 103);
-            lbltongdoanhthu.Name = "lbltongdoanhthu";
-            lbltongdoanhthu.Size = new Size(224, 35);
-            lbltongdoanhthu.TabIndex = 6;
-            lbltongdoanhthu.Text = "Tổng Doanh Thu :";
+            lblsospdaban.AutoSize = true;
+            lblsospdaban.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblsospdaban.ForeColor = Color.Tomato;
+            lblsospdaban.Location = new Point(750, 138);
+            lblsospdaban.Name = "lblsospdaban";
+            lblsospdaban.Size = new Size(40, 46);
+            lblsospdaban.TabIndex = 9;
+            lblsospdaban.Text = "0";
             // 
             // lblSoHoaDon
             // 
@@ -712,143 +784,71 @@
             lblSoHoaDonDaBan.TabIndex = 7;
             lblSoHoaDonDaBan.Text = "0";
             // 
-            // lblSoSanPhamDaBan
+            // lbltongdoanhthu
             // 
-            lblSoSanPhamDaBan.AutoSize = true;
-            lblSoSanPhamDaBan.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSoSanPhamDaBan.Location = new Point(750, 103);
-            lblSoSanPhamDaBan.Name = "lblSoSanPhamDaBan";
-            lblSoSanPhamDaBan.Size = new Size(269, 35);
-            lblSoSanPhamDaBan.TabIndex = 10;
-            lblSoSanPhamDaBan.Text = "Số Sản Phẩm Đã Bán :";
+            lbltongdoanhthu.AutoSize = true;
+            lbltongdoanhthu.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbltongdoanhthu.Location = new Point(27, 103);
+            lbltongdoanhthu.Name = "lbltongdoanhthu";
+            lbltongdoanhthu.Size = new Size(224, 35);
+            lbltongdoanhthu.TabIndex = 6;
+            lbltongdoanhthu.Text = "Tổng Doanh Thu :";
             // 
-            // lblsospdaban
+            // lblsotongdoanhthu
             // 
-            lblsospdaban.AutoSize = true;
-            lblsospdaban.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblsospdaban.ForeColor = Color.Tomato;
-            lblsospdaban.Location = new Point(750, 138);
-            lblsospdaban.Name = "lblsospdaban";
-            lblsospdaban.Size = new Size(40, 46);
-            lblsospdaban.TabIndex = 9;
-            lblsospdaban.Text = "0";
+            lblsotongdoanhthu.AutoSize = true;
+            lblsotongdoanhthu.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblsotongdoanhthu.ForeColor = Color.Tomato;
+            lblsotongdoanhthu.Location = new Point(27, 138);
+            lblsotongdoanhthu.Name = "lblsotongdoanhthu";
+            lblsotongdoanhthu.Size = new Size(40, 46);
+            lblsotongdoanhthu.TabIndex = 5;
+            lblsotongdoanhthu.Text = "0";
             // 
-            // lblGiaTriTrungBinh
+            // btnThongKe
             // 
-            lblGiaTriTrungBinh.AutoSize = true;
-            lblGiaTriTrungBinh.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGiaTriTrungBinh.Location = new Point(1085, 103);
-            lblGiaTriTrungBinh.Name = "lblGiaTriTrungBinh";
-            lblGiaTriTrungBinh.Size = new Size(355, 35);
-            lblGiaTriTrungBinh.TabIndex = 12;
-            lblGiaTriTrungBinh.Text = "Giá trị trung bình / hoá đơn :";
+            btnThongKe.Location = new Point(1293, 30);
+            btnThongKe.Name = "btnThongKe";
+            btnThongKe.Size = new Size(138, 29);
+            btnThongKe.TabIndex = 4;
+            btnThongKe.Text = "Thống Kê";
+            btnThongKe.UseVisualStyleBackColor = true;
             // 
-            // lblgiatritbtrenhoadon
+            // dtpDenNgay
             // 
-            lblgiatritbtrenhoadon.AutoSize = true;
-            lblgiatritbtrenhoadon.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblgiatritbtrenhoadon.ForeColor = Color.Tomato;
-            lblgiatritbtrenhoadon.Location = new Point(1085, 138);
-            lblgiatritbtrenhoadon.Name = "lblgiatritbtrenhoadon";
-            lblgiatritbtrenhoadon.Size = new Size(40, 46);
-            lblgiatritbtrenhoadon.TabIndex = 11;
-            lblgiatritbtrenhoadon.Text = "0";
+            dtpDenNgay.Location = new Point(1018, 33);
+            dtpDenNgay.Name = "dtpDenNgay";
+            dtpDenNgay.Size = new Size(250, 27);
+            dtpDenNgay.TabIndex = 3;
             // 
-            // dgvDoanhThu
+            // label6
             // 
-            dgvDoanhThu.BackgroundColor = SystemColors.ButtonHighlight;
-            dgvDoanhThu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDoanhThu.Location = new Point(20, 298);
-            dgvDoanhThu.Name = "dgvDoanhThu";
-            dgvDoanhThu.RowHeadersWidth = 51;
-            dgvDoanhThu.Size = new Size(510, 549);
-            dgvDoanhThu.TabIndex = 1;
+            label6.AutoSize = true;
+            label6.Location = new Point(930, 36);
+            label6.Name = "label6";
+            label6.Size = new Size(82, 20);
+            label6.TabIndex = 2;
+            label6.Text = "Đến Ngày :";
             // 
-            // dgvTopSanPham
+            // dtpTuNgay
             // 
-            dgvTopSanPham.BackgroundColor = SystemColors.ButtonHighlight;
-            dgvTopSanPham.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTopSanPham.Location = new Point(601, 298);
-            dgvTopSanPham.Name = "dgvTopSanPham";
-            dgvTopSanPham.RowHeadersWidth = 51;
-            dgvTopSanPham.Size = new Size(510, 549);
-            dgvTopSanPham.TabIndex = 2;
+            dtpTuNgay.Location = new Point(674, 33);
+            dtpTuNgay.Name = "dtpTuNgay";
+            dtpTuNgay.Size = new Size(250, 27);
+            dtpTuNgay.TabIndex = 1;
             // 
-            // label7
+            // label5
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F);
-            label7.Location = new Point(20, 259);
-            label7.Name = "label7";
-            label7.Size = new Size(158, 28);
-            label7.TabIndex = 3;
-            label7.Text = "Doanh thu theo :";
+            label5.AutoSize = true;
+            label5.Location = new Point(596, 36);
+            label5.Name = "label5";
+            label5.Size = new Size(72, 20);
+            label5.TabIndex = 0;
+            label5.Text = "Từ Ngày :";
             // 
-            // button1
+            // baoloi
             // 
-            button1.Location = new Point(193, 261);
-            button1.Name = "button1";
-            button1.Size = new Size(78, 29);
-            button1.TabIndex = 13;
-            button1.Text = "Ngày";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(277, 261);
-            button2.Name = "button2";
-            button2.Size = new Size(78, 29);
-            button2.TabIndex = 14;
-            button2.Text = "Tháng ";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(361, 261);
-            button3.Name = "button3";
-            button3.Size = new Size(78, 29);
-            button3.TabIndex = 15;
-            button3.Text = "Năm";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F);
-            label8.Location = new Point(749, 258);
-            label8.Name = "label8";
-            label8.Size = new Size(220, 28);
-            label8.TabIndex = 16;
-            label8.Text = "Top Sản Phẩm Bán Chạy";
-            // 
-            // groupBox4
-            // 
-            groupBox4.Controls.Add(btnXUATCSV);
-            groupBox4.Controls.Add(btnXuatEXCEL);
-            groupBox4.Location = new Point(1201, 298);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(250, 125);
-            groupBox4.TabIndex = 17;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Báo Cáo";
-            // 
-            // btnXuatEXCEL
-            // 
-            btnXuatEXCEL.Location = new Point(48, 35);
-            btnXuatEXCEL.Name = "btnXuatEXCEL";
-            btnXuatEXCEL.Size = new Size(150, 29);
-            btnXuatEXCEL.TabIndex = 0;
-            btnXuatEXCEL.Text = "Xuất Báo Cáo Excel";
-            btnXuatEXCEL.UseVisualStyleBackColor = true;
-            // 
-            // btnXUATCSV
-            // 
-            btnXUATCSV.Location = new Point(48, 70);
-            btnXUATCSV.Name = "btnXUATCSV";
-            btnXUATCSV.Size = new Size(150, 29);
-            btnXUATCSV.TabIndex = 1;
-            btnXUATCSV.Text = "Xuất Báo Cáo CSV";
-            btnXUATCSV.UseVisualStyleBackColor = true;
+            baoloi.ContainerControl = this;
             // 
             // frmPOS
             // 
@@ -868,18 +868,18 @@
             ((System.ComponentModel.ISupportInitialize)dtvSanPhamtrongKhoHang).EndInit();
             tpHoaDon.ResumeLayout(false);
             tpHoaDon.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)baoloi).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvDanhsachhoadon).EndInit();
             gbtracuuhoadon.ResumeLayout(false);
             gbtracuuhoadon.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvDanhsachhoadon).EndInit();
+            groupBox2.ResumeLayout(false);
             tpThongkebaocao.ResumeLayout(false);
             tpThongkebaocao.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvTopSanPham).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvDoanhThu).EndInit();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvDoanhThu).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvTopSanPham).EndInit();
-            groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)baoloi).EndInit();
             ResumeLayout(false);
         }
 

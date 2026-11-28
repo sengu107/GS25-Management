@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using GS25Management.DTO;
 using GS25Management.DAL;
+using System.Xml.Linq;
 
 namespace GS25Management.BUS
 {
@@ -20,7 +21,7 @@ namespace GS25Management.BUS
 
             try
             {
-                
+
                 if (hoaDon == null)
                 {
                     loi = "Thông tin hóa đơn không hợp lệ.";
@@ -135,7 +136,7 @@ namespace GS25Management.BUS
                             return false;
                         }
 
-                        // Không để tổng tiền giảm vượt quá tiền hàng
+                        // khong de tien giam lon hon tong tien con lai
                         decimal tienConLai = tongTien - tongTienGiam;
                         tienGiam = Math.Min(
                             tienGiam,
@@ -143,13 +144,13 @@ namespace GS25Management.BUS
 
                         tongTienGiam += tienGiam;
 
-                        // Thêm mã giảm giá vào danh sách
+                        // them ma giam gia vao danh sach giam gia cua hoa don
                         giamGiaList.Add(new GiamGiaDTO(
                             0, ma, tienGiam));
                     }
                 }
 
-                // Bước 3: Gán thông tin tiền vào hóa đơn
+                // gan thong tin tong tien, tien giam va thanh tien vao hoa don
                 hoaDon.TongTien = tongTien;
                 hoaDon.TienGiam = tongTienGiam;
                 hoaDon.ThanhTien = tongTien - tongTienGiam;
@@ -160,7 +161,7 @@ namespace GS25Management.BUS
                 if (string.IsNullOrEmpty(hoaDon.TrangThai))
                     hoaDon.TrangThai = "Đã thanh toán";
 
-                // Bước 4: Gọi DAL lập hóa đơn
+                // goi dal lap hoa don va chi tiet hoa don
                 HoaDonBanHangDAL.LapHoaDon(
                     hoaDon,
                     chiTietList,
@@ -176,13 +177,13 @@ namespace GS25Management.BUS
             }
         }
 
-        // 2. TRA CUU HOA DON
+        // tra cuu hoa don theo tu khoa (ma hoa don, ten khach hang, sdt khach hang)
         public static DataTable TraCuuHoaDon(string tuKhoa)
         {
             return HoaDonBanHangDAL.TraCuuHoaDon(tuKhoa);
         }
 
-        // 3. XOA HOA DON THONG THUONG
+        // xoa hoa don theo ma hoa don
         public static bool XoaHoaDon(int maHoaDon, out string loi)
         {
             if (maHoaDon <= 0)
@@ -195,7 +196,7 @@ namespace GS25Management.BUS
                 maHoaDon, out loi);
         }
 
-        // 4. XOA HOA DON VA HOAN HANG
+        // xoa hoa don hoan hang theo ma hoa don
         public static bool XoaHoaDonHoanHang(
             int maHoaDon, out string loi)
         {

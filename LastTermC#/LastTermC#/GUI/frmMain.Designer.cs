@@ -31,7 +31,6 @@
             mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
             menuStrip1 = new MenuStrip();
             bánHàngToolStripMenuItem = new ToolStripMenuItem();
-            pOSToolStripMenuItem = new ToolStripMenuItem();
             quảnLýHoáĐơnToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -55,22 +54,17 @@
             // 
             // bánHàngToolStripMenuItem
             // 
-            bánHàngToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { pOSToolStripMenuItem, quảnLýHoáĐơnToolStripMenuItem });
+            bánHàngToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { quảnLýHoáĐơnToolStripMenuItem });
             bánHàngToolStripMenuItem.Name = "bánHàngToolStripMenuItem";
             bánHàngToolStripMenuItem.Size = new Size(92, 24);
             bánHàngToolStripMenuItem.Text = "Bán Hàng ";
-            // 
-            // pOSToolStripMenuItem
-            // 
-            pOSToolStripMenuItem.Name = "pOSToolStripMenuItem";
-            pOSToolStripMenuItem.Size = new Size(224, 26);
-            pOSToolStripMenuItem.Text = "POS";
             // 
             // quảnLýHoáĐơnToolStripMenuItem
             // 
             quảnLýHoáĐơnToolStripMenuItem.Name = "quảnLýHoáĐơnToolStripMenuItem";
             quảnLýHoáĐơnToolStripMenuItem.Size = new Size(224, 26);
             quảnLýHoáĐơnToolStripMenuItem.Text = "Quản Lý Hoá Đơn";
+            quảnLýHoáĐơnToolStripMenuItem.Click += quảnLýHoáĐơnToolStripMenuItem_Click;
             // 
             // frmMain
             // 
@@ -93,7 +87,6 @@
         private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem bánHàngToolStripMenuItem;
-        private ToolStripMenuItem pOSToolStripMenuItem;
         private ToolStripMenuItem quảnLýHoáĐơnToolStripMenuItem;
     }
 }

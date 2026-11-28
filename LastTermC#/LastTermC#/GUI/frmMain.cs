@@ -14,5 +14,10 @@ namespace LastTermC_.GUI
         {
             InitializeComponent();
         }
+
+        private void quảnLýHoáĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
